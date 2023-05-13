@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 17.5% 65% 17.5%;   
+    width: 100%;
+    position: fixed;
+    top:0;
+    
+}
+
+.botones-izquierda #pinterest-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+nav {
+    max-width: 17.5%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.botones-izquierda {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botones-izquierda > li > a {
+    display: block;
+    padding: 10px 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+}
+
+.menu-vertical li{
+    padding: 10px 20px;
+}
+
+.menu-vertical > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.botones-izquierda li:hover .menu-vertical {
+    display: block;
+} 
+
+.finder {
+    width: 90%;
+    margin: auto;
+}
+
+.finder .barra-contenedor {   
+    padding: 13px;
+    margin: auto;
+    background-color: #f0e9e9;
+    border-radius: 100px;    
+    margin-top: 20px;
+}
+
+
+.finder .barra-contenedor input {
+    border-style: none;
+    outline: none;
+    width: 620px;
+    height: 25px;
+    background-color: #f0e9e9 ;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.iconos-derecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.iconos-derecha img {
+    width: 24px;
+    height: 24px; 
+    padding:15px 15px;
+    margin-top: 15px;
+
+}
+
+.iconos-derecha :hover {
+    background-color: #f0e9e9;
+      
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    gap: 20px;
+    justify-content: center;
+    padding: 70px;
+    margin-top: 80px;
+    overflow-y: scroll;
+}
+ 
+.content .card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    
+}
+
+.card-image:hover .boton-guardar{
+    visibility: visible;
+}
+.card-image:hover .boton-mas{
+    visibility: visible;
+}
+
+.card-image:hover .boton-subir{
+    visibility: visible;
+}
+
+.boton-guardar {
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 10px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    visibility: hidden;
+}
+.boton-subir {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    padding: 10px;
+    background-color: rgb(211, 198, 198);
+    opacity: .8;
+    margin: 10px;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.boton-mas {
+    position: absolute;
+    bottom:0;
+    right: 5px;
+    padding: 10px;
+    background-color: rgb(211, 198, 198);
+    opacity: .8;
+    margin: 10px;
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.card-image {
+    position: relative;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
